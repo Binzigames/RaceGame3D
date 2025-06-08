@@ -4,6 +4,7 @@ from DATA.Config import debug , curent_map
 from DATA.Game import *
 from DATA.map import find_payer_start
 import DATA.Config as con
+import DATA.SceneManager as sm
 # -------------> Window settings
 WIDTH = 800
 HEIGHT = 600
@@ -57,14 +58,12 @@ find_payer_start(con.curent_map)
 while not pr.window_should_close():
     update_camera()
     pr.begin_drawing()
-    pr.clear_background(con.SkyColor    )
-    # >3D mode
-    pr.begin_mode_3d(camera)
-    Game_cycle_draw()
-    Game_controls_update()
-    pr.end_mode_3d()
-    # >ui part
-    Game_ui_draw()
+    sm.handle_sm()
+    # > SM shit
+    if con.IsInGame == True:
+        pr.begin_mode_3d(camera)
+        Game_ui_draw()
+        pr.end_mode_3d()
     pr.end_drawing()
 
 # -------------> Cleanup
