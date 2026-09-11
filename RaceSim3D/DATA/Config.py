@@ -40,13 +40,7 @@ prev_z = 0
 
 PSpeed = 1
 PmaxSpeed = 25
-PAngle = 90.0
+PAngle = 0.0
 Steering = 0.0
 
-#game states
-IsinMenu = True
-IsInGame = False
-IsInPause = False
 
-
-Curent_scene_index = 0
