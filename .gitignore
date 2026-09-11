@@ -1,0 +1,14 @@
+*.pyc
+*.pyc
+*.xml
+*.pyc
+*.iml
+RaceSim3D/DATA/__pycache__/Config.cpython-313.pyc
+RaceSim3D/DATA/__pycache__/Game.cpython-313.pyc
+RaceSim3D/DATA/__pycache__/loader.cpython-313.pyc
+RaceSim3D/DATA/__pycache__/map.cpython-313.pyc
+RaceSim3D/DATA/__pycache__/menu.cpython-313.pyc
+RaceSim3D/DATA/__pycache__/Player.cpython-313.pyc
+RaceSim3D/DATA/__pycache__/SceneManager.cpython-313.pyc
+RaceSim3D/DATA/__pycache__/UI.cpython-313.pyc
+*.pyc
